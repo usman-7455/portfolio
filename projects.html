@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects | Creative Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Floating Navigation -->
+    <nav class="floating-nav animate__animated animate__fadeInDown">
+        <div class="nav-logo">PORTFOLIO</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html" class="active">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-hamburger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <!-- Projects Hero -->
+    <section class="projects-hero">
+        <div class="container">
+            <h1 class="animate__animated animate__fadeInUp">My <span>Projects</span></h1>
+            <p class="animate__animated animate__fadeInUp animate__delay-1s">A collection of my best work</p>
+        </div>
+    </section>
+
+    <!-- Projects Filter -->
+    <section class="projects-filter">
+        <div class="container animate__animated animate__fadeIn">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="design">Design</button>
+                <button class="filter-btn" data-filter="development">Development</button>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Grid -->
+    <section class="projects-full">
+        <div class="container">
+            <div class="projects-grid-full">
+                <div class="project-card-full animate__animated animate__fadeInUp" data-category="design">
+                    <div class="project-image-full">
+                        <img src="assets/images/project1.jfif" alt="p2p">
+                    </div>
+                    <div class="project-info-full">
+                        <h2>P2P Communication Application</h2>
+                        <p class="project-description">A Python-based peer-to-peer chat application enabling real-time messaging between two devices without a central server. Built using socket programming and threading, the project showcases efficient network communication and concurrency handling</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Networking</span>
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">Socket Programming</span>
+                            <span class="project-tag">Peer-to-Peer</span>
+                        
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                <div class="project-card-full animate__animated animate__fadeInUp" data-category="design,development">
+                    <div class="project-image-full">
+                        <img src="assets/images/project2.avif" alt="Word Paraphraser">
+                    </div>
+                    <div class="project-info-full">
+                        <h2>Word Paraphraser</h2>
+                        <p class="project-description">A Python-based tool that intelligently rewrites words or phrases using synonyms and linguistic patterns. It utilizes NLP libraries to enhance sentence variety and improve readability while preserving the original meaning—ideal for students, writers, and content creators.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">NLP</span>
+                            <span class="project-tag">Text Processing</span>
+                            <span class="project-tag">Automation</span>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                <div class="project-card-full animate__animated animate__fadeInUp" data-category="development">
+                    <div class="project-image-full">
+                        <img src="assets/images/project3.png" alt="Brand Identity">
+                    </div>
+                    <div class="project-info-full">
+                        <h2>Transport Management System</h2>
+                        <p class="project-description">A C++ console application that allows users to book rides for personal travel or schedule larger vehicles for business goods transportation. It features a simple user interface for selecting vehicle types, managing bookings, and streamlining transport logistics</p>
+                        <div class="project-tags">
+                            <span class="project-tag">C++</span>
+                            <span class="project-tag">Console Application</span>
+                            <span class="project-tag">Transport</span>
+                            <span class="project-tag">Logistics</span>
+                            <span class="project-tag">OOP</span>
+                        </div>
+
+                    </div>
+                </div>
+                
+                <div class="project-card-full animate__animated animate__fadeInUp" data-category="development">
+                    <div class="project-image-full">
+                        <img src="assets/images/project4.png" alt="Web Application">
+                    </div>
+                    <div class="project-info-full">
+                        <h2>Furniture Rental Web Application</h2>
+                        <p class="project-description">A dynamic web platform that allows users to browse, rent, and manage furniture rentals for homes and offices. The application features user authentication, real-time availability, and a responsive UI for a smooth rental experience. Built with a focus on usability and performance.</p>
+                        <div class="project-tags">
+                            <div class="project-tags">
+                                <span class="project-tag">Web Development</span>
+                                <span class="project-tag">UI/UX</span>
+                                <span class="project-tag">Furniture Rental</span>
+                                <span class="project-tag">Responsive Design</span>
+                                <span class="project-tag">E-Commerce</span>
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+
+               
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Modal -->
+    <div class="project-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <!-- Content will be loaded dynamically -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+<!-- Modern Footer -->
+<footer class="footer">
+    <div class="footer-container">
+        <!-- Logo with subtle animation -->
+        <div class="footer-logo animate__animated animate__fadeIn">
+            <span class="logo-text">PORTFOLIO</span>
+            <div class="logo-dot"></div>
+        </div>
+
+        <!-- Navigation Links -->
+        <nav class="footer-nav">
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link hover-underline">Home</a></li>
+                <li><a href="about.html" class="nav-link hover-underline">About</a></li>
+                <li><a href="projects.html" class="nav-link hover-underline">Projects</a></li>
+                <li><a href="contact.html" class="nav-link hover-underline">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Social Icons with hover effects -->
+        <div class="social-links">
+            <a href="#" aria-label="LinkedIn" class="social-icon">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="#" aria-label="Dribbble" class="social-icon">
+                <i class="fab fa-dribbble"></i>
+            </a>
+            <a href="#" aria-label="GitHub" class="social-icon">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="#" aria-label="Behance" class="social-icon">
+                <i class="fab fa-behance"></i>
+            </a>
+        </div>
+
+        <!-- Copyright with dynamic year -->
+    
+    </div>
+</footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/projects.js"></script>
+</body>
+</html>
